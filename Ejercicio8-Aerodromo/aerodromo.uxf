@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>620</x><y>410</y><w>190</w><h>160</h></coordinates><panel_attributes>Avion
+--
+- INT nro_de_matricula
+- STRING tipoAvion
+- INT nro_de_hangar
+- DATE fecha_adquisicion
+- String propietario
+
+--
+- RealizarServicio()  - ver condicion en power</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>180</y><w>190</w><h>140</h></coordinates><panel_attributes>TipoAvion
+--
+- INT nro_de_modelo
+- INT capacidad 
+- INT peso</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>380</y><w>190</w><h>140</h></coordinates><panel_attributes>Hangar
+--
+- INT nro_de_hangar
+- INT capacidad 
+- STRING ubicacion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>710</y><w>200</w><h>110</h></coordinates><panel_attributes>Mecanico
+--
+- INT salario
+- STRING turno
+- STRING tipo_de_avion_a_mantener</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>730</y><w>150</w><h>60</h></coordinates><panel_attributes>Propietario
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>880</x><y>200</y><w>210</w><h>120</h></coordinates><panel_attributes>Servicio
+--
+- INT nro_de_matricula (AVION)
+- DATE fecha
+- INT horas
+- STRING tipo_de_trabajo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>950</x><y>500</y><w>210</w><h>110</h></coordinates><panel_attributes>Persona
+--
+- INT nro_de_seguridad_social
+- STRING nombre
+- STRING direccion
+- INT telefono</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>600</y><w>190</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>170;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>600</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>1120</x><y>600</y><w>230</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1200</x><y>710</y><w>190</w><h>130</h></coordinates><panel_attributes>Piloto
+--
+- INT nro_de_licencia
+- STRING restricciones
+- STRING tipo_de_avion_a_pilotar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>560</y><w>40</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>20;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>440</y><w>180</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;20;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>310</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>310</y><w>190</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;100;170;10</additional_attributes></element></diagram>
